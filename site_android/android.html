@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/android.css">
+    <script src="https://kit.fontawesome.com/393150fd82.js" crossorigin="anonymous"></script>
     <title>Site Android</title>
 </head>
-<body>
+<body id="topo">
     <header class="Cabecalho_PgPrincipal">
         <h1>
-            Curiosidades de Tecnologia
+            CURIOSIDADES DE TECNOLOGIA
         </h1>
         <P>
-            Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um só lugar.
+            Tudo aquilo que você sempre quis saber sobre o mundo<br> Tech, em um só lugar.
         </P>
         <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Notícias</a>
-            <a href="#">Curiosidades</a>
-            <a href="#">Fale Conosco</a>
+            <a href="#topo">Home</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#curiosidade">Curiosidades</a>
+            <a href="#contact_us">Fale Conosco</a>
         </nav>
     </header>
     <main>
         <article class="principal">
-            <h1>
+            <h1 id="noticias">
                 HISTÓRIA DO MASCOTE ANDROID
             </h1>
             <P>
@@ -54,14 +55,13 @@
             <P>
                 A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.
             </P>
-            <picture>
+            <picture class="bugdroid">
                 <img src="../imagens/bugdroid.png" alt="Bugdroid">
             </picture>
             <P>
                 A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
             </P>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=jaAvxCMau_LGexx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            [EXTRA]
+            <iframe id="curiosidade" src="https://www.youtube.com/embed/l2UDgpLz20M?si=jaAvxCMau_LGexx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <aside class="extra">
                 <h3>
                     Quer aprender mais?
@@ -69,37 +69,43 @@
                 <p>
                     Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.
                 </p>
-                <ul>
-                    <li>1.5 - Cupcake</li>
-                    <li>1.6 - Donut</li>
-                    <li>3.0 - Eclair</li>
-                    <li>2.2 - Frayo</li>
-                    <li>2.3 - Gingerbread</li>
-                    <li>3.0 - Honeycomb</li>
-                    <li>4.0 - Ice Cream Sandwich</li>
-                    <li>4.1 - Jelly Bean</li>
-                    <li>4.4 KitKat</li>
-                    <li>5.0 - Lolipop</li>
-                    <li>6.0 - Marshmmallow</li>
-                    <li>7.0 - Nougat</li>
-                    <li>8.0 - Oreo</li>
-                    <li>9.0 - Pie</li>
-                </ul>
+                <div class="left">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> 1.5 - <span class="extra_li_underline">Cupcake</span></li></i>
+                        <li><i class="fa-solid fa-check"></i> 1.6 - <span class="extra_li_underline">Donut</span></li>
+                        <li><i class="fa-solid fa-check"></i> 3.0 - <span class="extra_li_underline">Eclair</span></li>
+                        <li><i class="fa-solid fa-check"></i> 2.2 - <span class="extra_li_underline">Frayo</span></li>
+                        <li><i class="fa-solid fa-check"></i> 2.3 - <span class="extra_li_underline">Gingerbread</span></li>
+                        <li><i class="fa-solid fa-check"></i> 3.0 - <span class="extra_li_underline">Honeycomb</span></li>
+                        <li><i class="fa-solid fa-check"></i> 4.0 - <span class="extra_li_underline">Ice Cream Sandwich</span></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> 4.1 - <span class="extra_li_underline">Jelly Bean</span></li>
+                        <li><i class="fa-solid fa-check"></i> 4.4 - <span class="extra_li_underline">KitKat</span></li>
+                        <li><i class="fa-solid fa-check"></i> 5.0 - <span class="extra_li_underline">Lolipop</span></li>
+                        <li><i class="fa-solid fa-check"></i> 6.0 - <span class="extra_li_underline">Marshmmallow</span></li>
+                        <li><i class="fa-solid fa-check"></i> 7.0 - <span class="extra_li_underline">Nougat</span></li>
+                        <li><i class="fa-solid fa-check"></i> 8.0 - <span class="extra_li_underline">Oreo</span></li>
+                        <li><i class="fa-solid fa-check"></i> 9.0 - <span class="extra_li_underline">Pie</span></li>
+                    </ul>
+                </div>
                 <p>
                     Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.
                 </p>
-                <p>
+                <p class="Pbottom_extra">
                     Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.
                 </p>
             </aside>
             <P>
-                "Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote."
+                Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.
             </P>
-            [/EXTRA]
         </article>
     </main>
-    <footer>
-        Site criado por Gustavo Guanabara para o CursoemVideo.
+    <footer id="contact_us">
+        Site criado por <strong class="strong">Guilherme Marconi</strong> para o <strong class="strong">CursoemVideo</strong>.<br>
+        <strong class="strong">Contato: (99) 99999-9999</strong>
     </footer>
 </body>
 </html>
