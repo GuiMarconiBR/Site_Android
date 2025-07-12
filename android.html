@@ -8,24 +8,24 @@
     <script src="https://kit.fontawesome.com/393150fd82.js" crossorigin="anonymous"></script>
     <title>Site Android</title>
 </head>
-<body id="topo">
+<body id="top">
     <header class="Cabecalho_PgPrincipal">
         <h1>
-            CURIOSIDADES DE TECNOLOGIA
+           <a href="#top">CURIOSIDADES DE TECNOLOGIA</a>
         </h1>
         <P>
             Tudo aquilo que você sempre quis saber sobre o mundo<br> Tech, em um só lugar.
         </P>
         <nav class="menu">
-            <a href="#topo">Home</a>
-            <a href="#noticias">Notícias</a>
-            <a href="#curiosidade">Curiosidades</a>
-            <a href="curiosos.html" target="_blank">Fale Conosco</a>
+            <a href="#top" target="_self">Home</a>
+            <a href="#noticias" target="_self">Notícias</a>
+            <a href="paginas/curiosidades.html" target="_self">Curiosidades</a>
+            <a href="paginas/contato.html" target="_self">Fale Conosco</a>
         </nav>
     </header>
     <main>
         <article class="principal">
-            <h1 id="noticias">
+            <h1>
                 HISTÓRIA DO MASCOTE ANDROID
             </h1>
             <P>
@@ -38,7 +38,8 @@
                 A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morril. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.
             </p>
             <picture>
-                <img src="imagens/dan-droids.png" alt="Androides">
+                <source media="(max-width:750px)" srcset="imagens/dan-droids-pq.png">
+                <img src="imagens/dan-droids.png" alt="Androides" class="dan-droids">
             </picture>
             <p>
                 Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.
@@ -50,7 +51,8 @@
                 A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
             </p>
             <picture>
-                <img src="imagens/irina-blok.jpg" alt="irina-blok">
+                <source media="(max-width:750px)" srcset="imagens/irina-blok-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="irina-blok" class="irina-block">
             </picture>
             <P>
                 A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.
@@ -58,10 +60,11 @@
             <picture class="bugdroid">
                 <img src="imagens/bugdroid.png" alt="Bugdroid">
             </picture>
+            <div  id="noticias"></div>
             <P>
                 A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
             </P>
-            <iframe id="curiosidade" src="https://www.youtube.com/embed/l2UDgpLz20M?si=jaAvxCMau_LGexx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/l2UDgpLz20M?si=jaAvxCMau_LGexx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <aside class="extra">
                 <h3>
                     Quer aprender mais?
@@ -71,24 +74,24 @@
                 </p>
                 <div class="left">
                     <ul>
-                        <li><i class="fa-solid fa-check"></i> 1.5 - <span class="extra_li_underline">Cupcake</span></li></i>
-                        <li><i class="fa-solid fa-check"></i> 1.6 - <span class="extra_li_underline">Donut</span></li>
-                        <li><i class="fa-solid fa-check"></i> 3.0 - <span class="extra_li_underline">Eclair</span></li>
-                        <li><i class="fa-solid fa-check"></i> 2.2 - <span class="extra_li_underline">Frayo</span></li>
-                        <li><i class="fa-solid fa-check"></i> 2.3 - <span class="extra_li_underline">Gingerbread</span></li>
-                        <li><i class="fa-solid fa-check"></i> 3.0 - <span class="extra_li_underline">Honeycomb</span></li>
-                        <li><i class="fa-solid fa-check"></i> 4.0 - <span class="extra_li_underline">Ice Cream Sandwich</span></li>
+                        <li><i class="fa-solid fa-check"></i> 1.5 - <span class="extra_li_underline"><abbr title="Bolinho">Cupcake</abbr></span></li></i>
+                        <li><i class="fa-solid fa-check"></i> 1.6 - <span class="extra_li_underline"><abbr title="Rosquinha">Donut</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 3.0 - <span class="extra_li_underline"><abbr title="Bomba">Eclair</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 2.2 - <span class="extra_li_underline"><abbr title="Yogurte Congelado">Froyo</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 2.3 - <span class="extra_li_underline"><abbr title="Pão de Mel">Gingerbread</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 3.0 - <span class="extra_li_underline"><abbr title="Favo de Mel">Honeycomb</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 4.0 - <span class="extra_li_underline"><abbr title="Snduíche de Sorvete">Ice Cream Sandwich</abbr></span></li>
                     </ul>
                 </div>
                 <div class="right">
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> 4.1 - <span class="extra_li_underline">Jelly Bean</span></li>
-                        <li><i class="fa-solid fa-check"></i> 4.4 - <span class="extra_li_underline">KitKat</span></li>
-                        <li><i class="fa-solid fa-check"></i> 5.0 - <span class="extra_li_underline">Lolipop</span></li>
-                        <li><i class="fa-solid fa-check"></i> 6.0 - <span class="extra_li_underline">Marshmmallow</span></li>
-                        <li><i class="fa-solid fa-check"></i> 7.0 - <span class="extra_li_underline">Nougat</span></li>
-                        <li><i class="fa-solid fa-check"></i> 8.0 - <span class="extra_li_underline">Oreo</span></li>
-                        <li><i class="fa-solid fa-check"></i> 9.0 - <span class="extra_li_underline">Pie</span></li>
+                    <ul class="right">
+                        <li><i class="fa-solid fa-check"></i> 4.1 - <span class="extra_li_underline"><abbr title="Bala de Goma">Jelly Bean</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 4.4 - <span class="extra_li_underline"><abbr title="Kit Kat">KitKat</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 5.0 - <span class="extra_li_underline"><abbr title="Pirulito">Lollipop</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 6.0 - <span class="extra_li_underline"><abbr title="Marshmallow">Marshmmallow</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 7.0 - <span class="extra_li_underline"><abbr title="Nougat">Nougat</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 8.0 - <span class="extra_li_underline"><abbr title="Oreo">Oreo</abbr></span></li>
+                        <li><i class="fa-solid fa-check"></i> 9.0 - <span class="extra_li_underline"><abbr title="Torta">Pie</abbr></span></li>
                     </ul>
                 </div>
                 <p>
@@ -107,5 +110,6 @@
         Site criado por <strong class="strong">Guilherme Marconi</strong> para o <strong class="strong">CursoemVideo</strong>.<br>
         <strong class="strong">Contato: (99) 99999-9999</strong>
     </footer>
+    <script src="arquivos_js/android.js"></script>
 </body>
 </html>
