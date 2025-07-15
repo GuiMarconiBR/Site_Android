@@ -235,11 +235,18 @@ iframe{
 }
 
 .extra p{
+<<<<<<< Updated upstream
     text-align: justify;
     padding-top: 20px;
     padding-right: 5px;
     padding-left: 5px;
     font-size:22.5px;
+=======
+padding-top: 20px;
+padding-right: 5px;
+padding-left: 5px;
+font-size:22.5px;
+>>>>>>> Stashed changes
 }
 
 .Pbottom_extra{
